@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Dame un número: <input id="numero">
+    <div id="resultado">0</div>
+    <script>
+        document.getElementById('numero').addEventListener('keyup', calcular)
+
+        function calcular(){
+            let n = document.getElementById('numero').value
+            n = parseInt(n)
+            document.getElementById('resultado').innerHTML = (n+1)/2 * n
+        }
+
+    </script>    
+</body>
+</html>
